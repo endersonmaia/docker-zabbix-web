@@ -16,4 +16,6 @@ ln -s /usr/share/zabbix /usr/share/nginx/html/zabbix
 
 mkdir /etc/service/nginx
 cp /build/nginx/nginx.runit /etc/service/nginx/run
-chmod +x /etc/service/nginx/run
+
+mkdir /etc/service/nginx-log-forwarder
+cp /build/nginx/nginx-log-forwarder.runit /etc/service/nginx-log-forwarder/run

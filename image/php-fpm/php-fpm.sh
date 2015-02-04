@@ -3,6 +3,7 @@ set -e
 source /build/buildconfig
 set -x
 
+apt-get update
 $minimal_apt_get_install php5-fpm php5-mysql
 
 mkdir /etc/service/php-fpm
