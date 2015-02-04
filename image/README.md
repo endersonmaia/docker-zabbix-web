@@ -23,6 +23,7 @@ Change the variable values to your situation.
 -----------------------------------------
 
 **Related resources**:
+  [library/mysql](https://registry.hub.docker.com/u/library/mysql/)
   [enderson/zabbix-server](https://index.docker.io/u/enderson/zabbix-server)
-  [baseimage-docker](http://phusion.github.io/baseimage-docker/) |
+  [phusion/baseimage-docker](http://phusion.github.io/baseimage-docker/) |
   [Docker registry](https://index.docker.io/u/phusion/baseimage/)
