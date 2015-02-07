@@ -7,13 +7,13 @@ DB_USER=${DB_USER:-}
 DB_PASS=${DB_PASS:-}
 DB_TYPE=${DB_TYPE:-MYSQL}
 
-ZBX_HOST=${ZBX_HOST:-}
-ZBX_PORT=${ZBX_PORT:-10051}
-ZBX_NAME=${ZBX_NAME:-zabbix_server}
+ZBX_SERVER=${ZBX_SERVER:-}
+ZBX_SERVER_PORT=${ZBX_SERVER_PORT:-10051}
+ZBX_SERVER_NAME=${ZBX_SERVER_NAME:-zabbix_server}
 
 if [ -n ${ZBX_PORT_10051_TCP_ADDR} ]; then
-  ZBX_HOST=${ZBX_PORT_10051_TCP_ADDR}
-  ZBX_PORT=${ZBX_PORT_10051_TCP_PORT}
+  ZBX_SERVER=${ZBX_PORT_10051_TCP_ADDR}
+  ZBX_SERVER_PORT=${ZBX_PORT_10051_TCP_PORT}
 fi
 
 SERVER_NAME=${SERVER_NAME:-localhost}
@@ -37,6 +37,6 @@ sed 's/{{DB_TYPE}}/'"${DB_TYPE}"'/' -i /etc/zabbix/web/zabbix.conf.php
 
 sed 's/{{SERVER_NAME}}/'"${SERVER_NAME}"'/' -i /etc/nginx/sites-enabled/zabbix.conf
 
-sed 's/{{ZBX_HOST}}/'"${ZBX_HOST}"'/' -i /etc/zabbix/web/zabbix.conf.php
-sed 's/{{ZBX_PORT}}/'"${ZBX_PORT}"'/' -i /etc/zabbix/web/zabbix.conf.php
-sed 's/{{ZBX_NAME}}/'"${ZBX_NAME}"'/' -i /etc/zabbix/web/zabbix.conf.php
+sed 's/{{ZBX_SERVER}}/'"${ZBX_SERVER}"'/' -i /etc/zabbix/web/zabbix.conf.php
+sed 's/{{ZBX_SERVER_PORT}}/'"${ZBX_SERVER_PORT}"'/' -i /etc/zabbix/web/zabbix.conf.php
+sed 's/{{ZBX_SERVER_NAME}}/'"${ZBX_SERVER_NAME}"'/' -i /etc/zabbix/web/zabbix.conf.php
