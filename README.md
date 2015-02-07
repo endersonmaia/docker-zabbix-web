@@ -10,8 +10,9 @@ Features :
 -----------------------------------------
 
 **Related resources**:
+  [library/mysql](https://registry.hub.docker.com/u/library/mysql/)
   [enderson/zabbix-server](https://index.docker.io/u/enderson/zabbix-server)
-  [baseimage-docker](http://phusion.github.io/baseimage-docker/) |
+  [phusion/baseimage-docker](http://phusion.github.io/baseimage-docker/) |
   [Docker registry](https://index.docker.io/u/phusion/baseimage/)
 
 **Table of contents**
@@ -44,7 +45,7 @@ The current version of the zabbix-web is 2.4. I'll try to keep upgrades inside n
 If you find this image useful here's how you can help:
 
 - Send a Pull Request with your awesome new features and bug fixes
-- Help new users with [Issues](https://github.com/enderson/docker-zabbix-server/issues) they may encounter
+- Help new users with [Issues](https://github.com/enderson/docker-zabbix-web/issues) they may encounter
 
 <a name="quickstart"></a>
 ## Quickstart
